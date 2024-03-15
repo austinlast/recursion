@@ -1,9 +1,9 @@
 def s(word_list, word, num=0):
+    if num >= len(word_list):
+        print("Fail")
+        return None
     if word == word_list[num]:
         print(num)
-        return
-    elif word < word_list[num]:
-        print("Fail")
         return
     else:
         return s(word_list, word, num + 1)
